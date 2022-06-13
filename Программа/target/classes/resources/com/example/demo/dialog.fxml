@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<VBox fx:id="l1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="196.0" prefWidth="235.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.DialogController">
+   <children>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Выберите тип точки" />
+      <RadioButton fx:id="r5" mnemonicParsing="false" text="Коридор" />
+      <RadioButton fx:id="r1" mnemonicParsing="false" text="Кабинет" />
+      <RadioButton fx:id="r2" mnemonicParsing="false" text="Лестница" />
+      <RadioButton fx:id="r3" mnemonicParsing="false" text="Туалет" />
+      <RadioButton fx:id="r4" mnemonicParsing="false" text="Лифт" />
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Введите имя точки" />
+      <TextField fx:id="t1" />
+      <CheckBox fx:id="doesItExist" mnemonicParsing="false" text="Эта точка уже существует" />
+      <Pane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <Button fx:id="save" layoutX="151.0" layoutY="2.0" mnemonicParsing="false" onMouseClicked="#Save" prefHeight="25.0" prefWidth="84.0" text="Сохранить" />
+            <Button fx:id="decline" layoutY="2.0" mnemonicParsing="false" onMouseClicked="#Decline" text="Отменить" />
+         </children>
+      </Pane>
+   </children>
+</VBox>
